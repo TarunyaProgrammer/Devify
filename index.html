@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devify | Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data:image/png;base64,
+    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
+    +l8AsJ2jTMH3QqrnvBx4BgWxAkSv/
+    +V7dwr03wfJyYaLuJxcNpf3AS6cXJoHwDzofwHgLFjQs1wnGAJAt4EbIftJrLeB86D/BfJLK58AQycX2f
+    +1ASxiBh2U5lcAW90YmP/fRNnUuA527eXUOADmQf8XJ4AboWfxInO2C9IvurkJFGibBUCs9/
+    9LloNiAygnV73Paliy70D6LTfOIM0DYF70/+pyBZAxyKgcKb/+IqGUo3DxZleAOvF/Afn/TxSq7gCugp7Fm
+    +xFYIiinPYYwcaocqMAsL7/D83/fxLLbTe5OvY7dAUbkNwcAAbx/8r/a3g0cr0zNvqEplROzimjnJRowqjo/
+    H9HmWHU1fLf7B6gxu1YkP7/o6Rb5/j3WHUD+Bcj2BhXbm4FmAP9X8cPsFj+N0ScH8Ba/7fB/
+    69aWwvrn0LcTCOCFBSqtHE/d7v8N6cC6uj/f1Q7Y0excsZr6LgGx8PCuyE537xH1/GAwxQ1owJi1/
+    9JGQy6cFPpB2Basm1lmhsX179LaWkGALHrf5l+11omh1BqGIW4P2QKG7v6jQAgav0v9XZhFQZ2rLlQsp
+    +VuYNdhIGNosY/AOrY/xUrL8uYA/doc1GNaaHVTbr/PIseBxtchYI7Mv02rwLq5P9x6BtnIa6nN
+    +mXeQ36bzNPbqnOCvuGgkAdxACOm5//FWBllf/H9P2fpvL/GSAjeXGVE8gmT+BBWPw85B6//kaOgdb5/xxnyjCQ8
+    +iqWvpvsDv2FV+/cgHd4U/3DybhdwWIVf9Lrb0FepdXHhaGaCqyhCsppGOzb/
+    ObwBj1v0B9MfSvt7jvl0Q8J4dudhMY2/lfBp9VpbOHbX5gJYROpfv/Z7hszKi6VxUQ2/m/8Ge8yc7Vq5CfsoJL
+    +J6MPs2qgMjs/wWY9eWfavkpZlXAh7KaN/h+oL8VIBb7v5b9M8tsH8lzLYU/8PaRxa/hV0T9ASAG/d+rNnzXlrF
+    +tiX/U/UsTAAWTW8AaP35Xxc8V0DvjXZWvgFY9HRs8SaQXhUPoPgBQJvP/
+    z1Izi7TuyQvqCmxJ6o4P4fZv00p9AOANp7/petPK7N7KtcvPVPWLqkvL59NlZNng5u+ZuwAbbL/S/DPL/34e5fUW
+    +6PMnuxesdIT8cHJHxvdwGt0P8rIDmjvM0rYvjqfvED6Uv4iu//PrBYcxVx0Ny9CghV/+tLPxmSl0DvfJD/
+    vrHz5jSBHC4ze2Tbw/vy/V0G1dD/elZdwZF5ndcyFiDRkU2PPQ5+n1Q942KarGGawIf+Xuz2N/i/3jUgsajqfgWw1f
+    +mMwmofnHOl/AfDYioMaQ4B4C1/g+fd0+nMCt3+UU4t4OUbi5Y4hYANfS/i8k67XN/Fcu3w00yJ1e0uwVADfu/
+    qwnPvF/d5++AbHPDj1VaTswtAGzt/5aT8d1McfuZdvm/bddXP8wnpwCIVv8fgHQrZD/y68HrAuDuABCj/j8CxXu
+    +97h5vcOFgKf16Q4ANc7/04j2/Xe5a+XbS4NO0EEpFoxxB4C2n//1te+C7MfVE+6B2fAtZD2yiTMAtFL/7yszcukn/
+    4O793pnJbxZ9OMGAC3R/zLXyitXTpn57mp5D+DV8VkIdrl9uAGAYuQuK1/
+    Opr9cUmZYT4GVunk7DLni7PRzoHxxQ0Jnb/W7zh3DDMltsis3AGhyRt3YRhzoAGDErvgqdwCIT6ZGM+oAYMSu
+    +Cp3AIhPpkYz6gBgxK74KncAiE
+    +mRjPqAGDErvgqdwCIT6ZGMxIAlJpgpVGrrnIsHNgnAHwbuDKWGXXzMOLAFgHgw8CHjJp1lWPhwEcEgGsAJSjryvxx4
+    FoBYBXw8PzNvZsxcLYAoKK3KfR6T1fmhwMbgbUDAGgVuN8y0938sCyemcoTQk9Z7B4AQFO7FfhYPHPsZjKBAx8AbtPf
+    hwGgf+8ELF647ZjdIg7sAi4Y0LsUAPr/rYDFO5ctYsH8kqqshMpofLSMAoD+uKbaGFq8eDO/
+    3A145vKK1Ptlm5bSOA4Aqqe3rqUn1gU8sY606RxYX+3vRr5APAkAg67PBZQna/
+    inRprE6RR3Naw5sB9QErrhnwcn9fZ/r+rpofHoSUIAAAAASUVORK5CYII=" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class="header">
+
+        <div id="menuCanvas" class="menu-canvas">
+            <div class="menu-search">
+                <h2>Search</h2>
+                <input id="searchInp" class="menuSearchInp" type="text" placeholder="Search Songs" spellcheck="false"
+                    onkeydown="search()" />
+
+                <input id="searchInpP" class="menuSearchInp" type="text" placeholder="Search Playlists"
+                    spellcheck="false" onkeydown="searchP()" />
+            </div>
+
+
+            <div class="home-nav">
+                <h2>Navigate</h2>
+                <div class="options">
+                    All
+                    <div class="opt">
+                        <ul>
+                            <li><a href="https://open.spotify.com/search/" target="blank">All Playlist - Spotify</a>
+                            </li>
+                            <li><a href="https://gaana.com/" target="blank">All - Ganna</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="options">
+                    Treanding
+                    <div class="opt">
+                        <ul>
+                            <li><a href="https://gaana.com/songs" target="blank">Treanding Songs - Ganna</a></li>
+                            <li><a href="https://music.youtube.com/explore" target="blank">Explore Songs - YT Music</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="options">
+                    Bollywood/Hindi
+                    <div class="opt">
+                        <ul>
+                            <li><a href="https://open.spotify.com/genre/bollywood-page" target="blank">Bollywood -
+                                    Spotify</a>
+                            </li>
+                            <li><a href="https://gaana.com/newrelease/hindi" target="blank">Bollywood New Songs -
+                                    Ganna</a></li>
+                            <li><a href="https://gaana.com/old-songs/hindi" target="blank">Bollywood Old Songs -
+                                    Ganna</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="options">
+                    English
+                    <div class="opt">
+                        <ul>
+                            <li><a href="https://open.spotify.com/genre/pop-page" target="blank">Pop - Spotify</a></li>
+                            <li><a href="https://open.spotify.com/genre/kpop-page" target="blank">K Pop - Spotify</a>
+                            </li>
+                            <li><a href="https://open.spotify.com/genre/hiphop-page" target="blank">Hip Hop -
+                                    Spotify</a></li>
+                            <li><a href="https://gaana.com/newrelease/english" target="blank">New Release - Ganna</a>
+                            </li>
+                            <li><a href="https://open.spotify.com/genre/new-releases-page" target="blank">New Release -
+                                    Spotify</a></li>
+                            <li><a href="https://open.spotify.com/playlist/6IdR78TOog83PV4XhLDvWN"
+                                    target="blank">English Top
+                                    Hits - Spotify</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="options">
+                    Radio
+                    <div class="opt">
+                        <ul>
+                            <li><a href="https://open.spotify.com/search/Radio" target="blank">Radio - Spotify</a></li>
+                            <li><a href="https://music.youtube.com/search?q=radio" target="blank">Radio - YT Music</a>
+                            </li>
+                            <li><a href="https://gaana.com/radio" target="blank">All Radio - Ganna</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="options">
+                    Mood
+                    <div class="opt">
+                        <ul>
+                            <li><a href="https://open.spotify.com/genre/mood-page" target="blank">Mood Playlists -
+                                    Spotify</a>
+                            </li>
+                            <li><a href="https://music.youtube.com/moods_and_genres" target="blank">All Moods & Genres -
+                                    YT
+                                    Music</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile">
+                <img src="img/profile.gif" alt="profile image">
+                <h2>Tarunya Kesharwani</h2>
+                <h6>Developer, Founder</h6>
+                <div class="footer-copy">All rights reserved by <span>&copyDevify 2021</span></div>
+            </div>
+        </div>
+
+        <div class="left">
+            <i id="menu" class="material-icons">menu</i>
+            <h2>Devify</h2>
+
+            <div class="search">
+                <i class="material-icons search-icon">search</i>
+                <input id="searchInp" class="searchInp" type="text" placeholder="Search Songs" spellcheck="false"
+                    onkeydown="search()" />
+            </div>
+
+            <div class="search search-p">
+                <i class="material-icons search-icon">search</i>
+                <input id="searchInpP" class="searchInp" type="text" placeholder="Search Playlists" spellcheck="false"
+                    onkeydown="searchP()" />
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="mode">
+                <i id="moon" class="material-icons">nightlight</i>
+                <i id="sun" class="material-icons">wb_sunny</i>
+            </div>
+            <a href="/">Log In / Sign Up</a>
+        </div>
+
+
+    </section>
+
+
+    <section class="home-nav v2">
+        <div class="options">
+            All
+            <div class="opt">
+                <ul>
+                    <li><a href="https://open.spotify.com/search/" target="blank">All Playlist - Spotify</a></li>
+                    <li><a href="https://gaana.com/" target="blank">All - Ganna</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="options">
+            Treanding
+            <div class="opt">
+                <ul>
+                    <li><a href="https://gaana.com/songs" target="blank">Treanding Songs - Ganna</a></li>
+                    <li><a href="https://music.youtube.com/explore" target="blank">Explore Songs - YT Music</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="options">
+            Bollywood/Hindi
+            <div class="opt">
+                <ul>
+                    <li><a href="https://open.spotify.com/genre/bollywood-page" target="blank">Bollywood - Spotify</a>
+                    </li>
+                    <li><a href="https://gaana.com/newrelease/hindi" target="blank">Bollywood New Songs - Ganna</a></li>
+                    <li><a href="https://gaana.com/old-songs/hindi" target="blank">Bollywood Old Songs - Ganna</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="options">
+            English
+            <div class="opt">
+                <ul>
+                    <li><a href="https://open.spotify.com/genre/pop-page" target="blank">Pop - Spotify</a></li>
+                    <li><a href="https://open.spotify.com/genre/kpop-page" target="blank">K Pop - Spotify</a></li>
+                    <li><a href="https://open.spotify.com/genre/hiphop-page" target="blank">Hip Hop - Spotify</a></li>
+                    <li><a href="https://gaana.com/newrelease/english" target="blank">New Release - Ganna</a></li>
+                    <li><a href="https://open.spotify.com/genre/new-releases-page" target="blank">New Release -
+                            Spotify</a></li>
+                    <li><a href="https://open.spotify.com/playlist/6IdR78TOog83PV4XhLDvWN" target="blank">English Top
+                            Hits - Spotify</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="options">
+            Radio
+            <div class="opt">
+                <ul>
+                    <li><a href="https://open.spotify.com/search/Radio" target="blank">Radio - Spotify</a></li>
+                    <li><a href="https://music.youtube.com/search?q=radio" target="blank">Radio - YT Music</a></li>
+                    <li><a href="https://gaana.com/radio" target="blank">All Radio - Ganna</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="options">
+            Mood
+            <div class="opt">
+                <ul>
+                    <li><a href="https://open.spotify.com/genre/mood-page" target="blank">Mood Playlists - Spotify</a>
+                    </li>
+                    <li><a href="https://music.youtube.com/moods_and_genres" target="blank">All Moods & Genres - YT
+                            Music</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="advertiser">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="carousal-img"
+                        src="https://cdn.justjared.com/wp-content/uploads/headlines/2015/10/adele-hello.jpg"
+                        class="d-block w-100" alt="Hello">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousal-img"
+                        src="https://www.pluggedin.com/wp-content/uploads/2020/01/x-ed-sheeran-review-image-1200x688.jpg"
+                        class="d-block w-100" alt="Ed Shreen">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousal-img"
+                        src="https://cdn.wallpapersafari.com/0/69/3VdCOF.jpg"
+                        class="d-block w-100" alt="One Last Time">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousal-img"
+                        src="https://wallpapercave.com/wp/wp1842540.jpg"
+                        class="d-block w-100" alt="We don't talk any more">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousal-img"
+                        src="https://images.genius.com/f747fbedc8a2bc3a7431cf5c3f54bb24.1000x1000x1.png"
+                        class="d-block w-100" alt="Shawn Mendes">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousal-img"
+                        src="https://i.pinimg.com/originals/b3/75/f1/b375f19b271aa690b075749e76d9b4e9.jpg"
+                        class="d-block w-100" alt="Sorry">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+
+    <section class="albums">
+        <h2>My Albums</h2>
+
+        <div class="col">
+            <div class="col-piece">
+                <a href="./pages/albums.html" target="blank">
+                    <img src="https://cdn.icon-icons.com/icons2/1880/PNG/512/iconfinder-star-4341322_120554.png" />
+                    <h3>Favourite</h3>
+                </a>
+            </div>
+            <div class="col-piece">
+                <a href="./pages/albums.html" target="blank">
+                    <img
+                        src="https://purepng.com/public/uploads/large/purepng.com-music-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596085b6osz.png" />
+                    <h3>Hindi</h3>
+                </a>
+            </div>
+            <div class="col-piece">
+                <a href="./pages/albums.html" target="blank">
+                    <img src="https://www.shareicon.net/data/512x512/2016/08/18/814958_multimedia_512x512.png" />
+                    <h3>English</h3>
+                </a>
+            </div>
+            <div class="col-piece">
+                <a href="./pages/albums.html" target="blank">
+                    <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/disc-vinyl-icon.png" />
+                    <h3>Custom</h3>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="recent">
+        <h2><a href="https://open.spotify.com/playlist/37i9dQZF1DX5Ejj0EkURtP" target="blank">Recent & Fav</a></h2>
+
+        <div class="recent-canvas">
+            <i id="play" class="material-icons">play_arrow</i>
+            <h2>Devify</h2>
+
+            <div class="r-c-songs">
+                <div class="r-c-s-top">
+                    <div class="one">#</div>
+                    <div class="two">Title</div>
+                    <div class="three">Album</div>
+                    <div class="four"><i id="duration" class="material-icons">schedule</i></div>
+                </div>
+
+                <div class="r-c-s-songs">
+                    <ol class="songs-ol">
+                        <li>
+                            <div class="one">1</div>
+                            <div class="two">Hello<br><span>Adele</span></div>
+                            <div class="three">25</div>
+                            <div class="four">4:55</div>
+                        </li>
+                        <li>
+                            <div class="one">2</div>
+                            <div class="two">Sorry<br><span>Justin Bieber</span></div>
+                            <div class="three">Purpose(Deluxe)</div>
+                            <div class="four">3:20</div>
+                        </li>
+                        <li>
+                            <div class="one">3</div>
+                            <div class="two">Thinking Out Aloud<br><span>Ed Sheeran</span></div>
+                            <div class="three">x(Deluxe Edition)</div>
+                            <div class="four">4:41</div>
+                        </li>
+                        <li>
+                            <div class="one">4</div>
+                            <div class="two">One Last Time<br><span>Ariana Grande</span></div>
+                            <div class="three">My Everything(Deluxe)</div>
+                            <div class="four">3:17</div>
+                        </li>
+                        <li>
+                            <div class="one">5</div>
+                            <div class="two">Just The Way You Are<br><span>Burno Mars</span></div>
+                            <div class="three">Doo-Wops & Hooligans</div>
+                            <div class="four">3:40</div>
+                        </li>
+                        <li>
+                            <div class="one">6</div>
+                            <div class="two">Closer<br><span>The Chainsmokers, Halsey</span></div>
+                            <div class="three">Closer</div>
+                            <div class="four">4:04</div>
+                        </li>
+                        <li>
+                            <div class="one">7</div>
+                            <div class="two">Stay With Me<br><span>Sam Smith</span></div>
+                            <div class="three">In the Lonely Hour</div>
+                            <div class="four">2:52</div>
+                        </li>
+                        <li>
+                            <div class="one">8</div>
+                            <div class="two">Wake Me Up<br><span>Avicii</span></div>
+                            <div class="three">True</div>
+                            <div class="four">4:07</div>
+                        </li>
+                        <li>
+                            <div class="one">9</div>
+                            <div class="two">Bad Guy<br><span>Billie Eilish</span></div>
+                            <div class="three">WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?</div>
+                            <div class="four">3:14</div>
+                        </li>
+                        <li>
+                            <div class="one">10</div>
+                            <div class="two">Love Me like You Do<br><span>Ellie Goulding</span></div>
+                            <div class="three">Delirium(Deluxe)</div>
+                            <div class="four">4:12</div>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="recent-p">
+        <h2>Recent Playlists</h2>
+
+        <div class="rp-canvas">
+
+            <h4>English</h4>
+            <div class="rp-c-col">
+                <iframe class="rp-col-piece"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5Ejj0EkURtP?utm_source=generator"
+                    width="100%" height="200" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <iframe class="rp-col-piece"
+                    src="https://open.spotify.com/embed/playlist/6IdR78TOog83PV4XhLDvWN?utm_source=generator"
+                    width="100%" height="200" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+
+            <h4>Party</h4>
+            <div class="rp-c-col">
+                <iframe class="rp-col-piece"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8FwnYE6PRvL?utm_source=generator"
+                    width="100%" height="200" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <iframe class="rp-col-piece"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXti3N4Wp5xy?utm_source=generator&theme=0""
+                    width=" 100%" height="200" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="pod">
+        <h2>Podcasts <span>Shows To Try</span></h2>
+
+        <div class="pod-canvas">
+
+            <div class="pod-col">
+                <iframe class="pod-piece"
+                    src="https://open.spotify.com/embed/show/0TcsI1YxWMIUpXR6ARY3dO?utm_source=generator" width="100%"
+                    height="232" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <iframe class="pod-piece"
+                    src="https://open.spotify.com/embed/show/6kw2ad8O53PBFs3rCgf17n?utm_source=generator" width="40%"
+                    height="232" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+            <div class="pod-col">
+                <iframe class="pod-piece"
+                    src="https://open.spotify.com/embed/show/2X40qLyoj1wQ2qE5FVpA7x?utm_source=generator" width="60%"
+                    height="232" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <iframe class="pod-piece"
+                    src="https://open.spotify.com/embed/show/6ZcvVBPQ2ToLXEWVbaw59P?utm_source=generator" width="100%"
+                    height="232" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+            <div class="pod-col">
+                <iframe class="pod-piece"
+                    src="https://open.spotify.com/embed/show/1y0HkURHGacA4f0TNeGRI6?utm_source=generator" width="100%"
+                    height="232" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+
+        <div class="footer-canvas">
+
+            <div class="footer-main">
+                <h2 class="footer-logo">Devify</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam laborum temporibus cum, sed dolor
+                    sint excepturi id saepe cupiditate aut, ab nemo facilis vel, eligendi fugit a perspiciatis nobis!
+                    Commodi, labore excepturi. Aliquid suscipit, laboriosam ullam quis, iste nemo odio ex beatae numquam
+                    natus quam, ipsam doloribus provident recusandae saepe?
+                </p>
+                <div class="f-m-icons">
+                    <img class="footer-icon" src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
+                    <img class="footer-icon" src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
+                    <img class="footer-icon" src="https://img.icons8.com/fluency/48/000000/twitter.png" />
+                    <img class="footer-icon" src="https://img.icons8.com/fluency/48/000000/dribbble.png" />
+                </div>
+            </div>
+
+            <div class="fl footerlink-1">
+                <h4>Assets</h4>
+                <a href="/">Framework</a>
+                <a href="/">Icons</a>
+                <a href="/">Playlists</a>
+                <a href="/">Songs</a>
+                <a href="/">Podcasts</a>
+            </div>
+            <div class="fl footerlink-2">
+                <h4>Contact</h4>
+                <p>
+                    <span>Call</span> +91 xxxx-nnnnnn<br>
+                    <span>Email</span> administrator@devify.in
+                </p>
+            </div>
+            <div class="fl footerlink-3">
+                <h4>Address</h4>
+                <p>
+                    Iris Watson<br>
+                    P.O. Box 283 8562 Fusce Rd.<br>
+                    Frederick Nebraska 20620<br>
+                    (372) 587-2335
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-copy">All rights reserved by <span>&copyDevify 2021</span></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <script src="small.js"></script>
+
+
+</body>
+
+</html>

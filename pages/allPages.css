@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;500;700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", Arial;
+  scroll-behavior: smooth;
+  color: #fff;
+  cursor: default;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #059200;
+}
+
+body {
+  background: linear-gradient(#4e4e4e, #000);
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(90deg, #f1f1f1e1, #fff);
+}
+.header .left {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.bi {
+  color: #000;
+}
+.logo {
+  font-family: "Advent Pro";
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  color: #059200;
+}
+
+.header .right {
+  width: 60%;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.right-nav {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.25s;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.right-nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 0%;
+  margin: auto;
+  height: 0.1rem;
+  background: #059200ce;
+  transition: 0.25s;
+}
+.right-nav:hover {
+  font-weight: bold;
+  color: #fff;
+}
+.right-nav:hover:after {
+  width: 110%;
+  height: 2.5rem;
+  top: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  margin: 1rem 3rem;
+  color: #ffffff;
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: default;
+}
+.title-a{
+  text-decoration: none;
+}
+.title:hover {
+  margin-left: 2rem;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.c1 {
+  margin-top: 2rem !important;
+}
+.col {
+  width: 95%;
+  margin: auto;
+  margin-top: 1rem !important;
+  display: flex;
+  justify-content: space-between;
+}
+.col-piece {
+  margin: 0 1rem;
+  transition: 0.25s;
+  border-radius: 0.5rem;
+  height: 15rem;
+}
+.col-piece:hover {
+  box-shadow: rgba(255, 255, 255, 0.23) 0px 3px 6px,
+    rgba(255, 255, 255, 0.3) 0px 3px 6px;
+  transform: scale(1.05);
+}
+.mt-5 {
+  margin-top: 5rem !important;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  margin-top: 8rem !important;
+  padding: 3rem 5rem;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: all 1s;
+  box-shadow: none;
+  border-top-right-radius: 15rem;
+}
+.footer:hover {
+  box-shadow: 0 -10px 30px #c7c7c7ce;
+  border-top-right-radius: 5rem;
+}
+.footer-canvas {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.footer-main {
+  width: 40%;
+}
+
+.footer-logo {
+  font-family: "Advent Pro";
+  font-size: 3rem;
+  color: #059200;
+  text-shadow: 1px 1px 10px #ffffff6b;
+  margin-bottom: 1rem;
+}
+.footerlink-1 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-canvas a,
+p {
+  font-size: 1.1rem;
+}
+.footerlink-1 > a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.footerlink-1 > a:hover {
+  font-weight: bolder;
+  margin-left: 0.5rem;
+  color: #059200;
+}
+.fl {
+  margin-top: 3rem;
+}
+.footer-icon {
+  cursor: pointer;
+  max-width: 48px;
+  transition: 0.25s;
+}
+.footer-icon:hover {
+  transform: scale(1.1);
+  margin-left: 0.5rem;
+}
+
+.footer-copy {
+  margin-top: 3rem;
+  width: 100%;
+  color: #fff;
+  background: transparent;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#custom{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ei{
+  display: block !important;
+  color: #e00202;
+  position: absolute;
+  left: 0%;
+  opacity: 0;
+  transition: 1s;
+}
+#custom:hover .ei{
+  opacity: 1;
+  left: 120%;
+}
+
+
+
+/* Small Screen */
+@media (max-width: 800px) {
+  .col-piece {
+    height: 5rem !important;
+  }
+
+  .footer{
+    padding: 1rem;
+    border-top-right-radius: 7rem;
+  }
+  .footer-canvas{
+    flex-direction: column;
+  }
+  .footer-main{
+    width: 90%;
+    margin: auto;
+  }
+  .footer-main>p{
+    width: 100% !important;
+  }
+  .footer-copy{
+    font-size: 1.2rem;
+  }
+  .fl{
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
+  .header {
+    padding: 1rem;
+  }
+  .logo {
+    margin-left: 1rem;
+  }
+  .right {
+    display: none !important;
+  }
+  .col {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-piece {
+    margin: 0.5rem 0;
+  }
+  .title {
+    font-size: 1.7rem;
+    margin: 1rem 3rem;
+    margin-left: 2rem;
+    color: #ffffff;
+    cursor: default;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1180px) {
+  .footer-canvas {
+    flex-direction: column;
+  }
+  .footer-main > p {
+    width: 170%;
+  }
+  .fl {
+    display: none;
+  }
+}
