@@ -19,9 +19,7 @@
 
 ## 📸 Screenshot
 
-![Devify Screenshot](https://tarunyaprogrammer.github.io/Devify/assets/images/screenshot.png)
-
-> _(Replace with actual image if this one is not valid)_
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/b693dd92-a4c0-4349-bb23-5ed906033b36" />
 
 ---
 
