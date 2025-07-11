@@ -118,9 +118,8 @@ See the [`LICENSE`](LICENSE) file for details.
 
 **Tarunya Ksh**  
 - GitHub: [@tarunyaprogrammer](https://github.com/tarunyaprogrammer)  
-- Portfolio: [tarunyaprogrammer.github.io](https://tarunyaprogrammer.github.io)  
-- Twitter: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)  
-- Email: tarunya@example.com
+- LinkedIn: [@tarunyakesharwani](https://www.linkedin.com/in/tarunyakesharwani/)
+- Email: tarunyak.10@gmail.com
 
 ---
 
@@ -134,8 +133,8 @@ Feel free to open an issue for bugs, ideas, or suggestions.
 ## 📬 Contact
 
 Need help customizing **Devify** or want to collaborate?  
-Reach out via GitHub or email: **tarunya@example.com**
+Reach out via GitHub or email: **tarunyak.10@gmail.com**
 
 ---
 
-_This project was built with ❤️ to help developers build their personal brand._
+_This project was built with ❤️ to help developers build their personal sites._
